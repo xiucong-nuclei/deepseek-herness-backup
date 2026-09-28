@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "name": "@liustack/modlens",
+      "version": "3.26.1",
+      "spec": "^3.26.1",
+      "isBundle": true,
+      "inBundles": [
+        "@liustack/modlens"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@michengai/dsh-skills-manager",
+      "version": "0.1.52",
+      "spec": "^0.1.52",
+      "isBundle": true,
+      "inBundles": [
+        "@michengai/dsh-skills-manager"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@moonquake2004/dsh-doctor",
+      "version": "0.8.5",
+      "spec": "^0.8.5",
+      "isBundle": true,
+      "inBundles": [
+        "@moonquake2004/dsh-doctor"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "@tt-a1i/archify-dsh",
+      "version": "0.1.0",
+      "spec": "^0.1.0",
+      "isBundle": true,
+      "inBundles": [
+        "@tt-a1i/archify-dsh"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-any-background",
+      "version": "0.2.3",
+      "spec": "^0.2.3",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-any-background"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-context",
+      "version": "0.53.1",
+      "spec": "^0.53.1",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-context"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-file-upload",
+      "version": "0.4.3",
+      "spec": "^0.4.3",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-file-upload"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-free-search",
+      "version": "0.4.28",
+      "spec": "^0.4.28",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-free-search"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-joi-channel-theme",
+      "version": "0.1.11",
+      "spec": "^0.1.11",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-joi-channel-theme"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dsh-mnemon",
+      "version": "0.5.10",
+      "spec": "^0.5.10",
+      "isBundle": true,
+      "inBundles": [
+        "dsh-mnemon"
+      ],
+      "enabled": true
+    },
+    {
+      "name": "dshmarket",
+      "version": "1.47.0",
+      "spec": "^1.47.0",
+      "isBundle": true,
+      "inBundles": [
+        "dshmarket"
+      ],
+      "enabled": true
+    }
+  ],
+  "patch": [],
+  "pnpmWorkspace": "packages:\n  - .\n\nnodeLinker: hoisted\nautoInstallPeers: false\nallowBuilds:\n  cloudflared: true\n  cpu-features: true\n  node-pty: true\n  ssh2: true\n  sharp: true\n  tesseract.js: true\nminimumReleaseAgeExclude:\n  - '@liustack/modlens@3.26.1'\n  - '@michengai/dsh-skills-manager@0.1.43 || 0.1.52'\n  - dsh-context@0.46.0 || 0.48.0 || 0.53.1\n  - dshmarket@1.45.0\n  - dsh-mnemon-provider-mnemon-native@0.5.5\n  - dsh-mnemon-source-documents@0.5.5\n  - dsh-mnemon-source-memory-spaces@0.5.5 || 0.5.8\n  - dsh-mnemon-source-runtime@0.5.5 || 0.5.7\n  - dsh-mnemon-strategy-default-three-tier@0.5.5\n  - dsh-mnemon@0.5.6 || 0.5.10\n  - dsh-mnemon-provider-openviking@0.5.5\n"
+}

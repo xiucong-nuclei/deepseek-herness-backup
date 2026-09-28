@@ -1,0 +1,33 @@
+{
+  "id": "sync-21c92dcb-1b60-4fb3-8d0a-ba5bbcbc9dfb",
+  "createdAt": "2026-09-28T11:29:32.288Z",
+  "manifest": {
+    "schemaVersion": 1,
+    "dshVersion": "0.1.2-rc.1",
+    "platform": "linux",
+    "sectionIds": [
+      "settings",
+      "ui",
+      "providers",
+      "plugins",
+      "prompts",
+      "skills",
+      "agentPresets",
+      "agentInstructions",
+      "self"
+    ],
+    "containsSecrets": false,
+    "transport": "git"
+  },
+  "sectionHashes": {
+    "settings": "9ddd09cfe67cbfbc3b0c1b5452f031b1383f2f2364f6ef355caea176d2f120fa",
+    "ui": "e73f8bb56928a19f1c15aa022e261ddbf373ed3c17e49fec82fa200d43541681",
+    "providers": "b3f9c1b79402cdb29e581eef9e862570714ff6089010a26cc7df642510f463e8",
+    "plugins": "e8bf61b380bde0b905f85825c4c71dce7f4c951c389ac79870de3fca2f60dc4d",
+    "prompts": "23d05fd89e9e61985416d8fb3dfc30e5aae4298aa4f684f2a0391b49d70e8cfd",
+    "skills": "99f8982e677dea8b1a508b484a089efbdb19de2c6ed68e6812fcaea301441d06",
+    "agentPresets": "2fe09dfb1ef1f6216d00cf7c1a1e3380349f61fe0ea40c3ea8dcb76e9d670eea",
+    "agentInstructions": "2fe09dfb1ef1f6216d00cf7c1a1e3380349f61fe0ea40c3ea8dcb76e9d670eea",
+    "self": "6e2ab3f2ce351edf7127e4acb5c260dcc02f8472ec8f7a7ad6028d89c3df8f63"
+  }
+}

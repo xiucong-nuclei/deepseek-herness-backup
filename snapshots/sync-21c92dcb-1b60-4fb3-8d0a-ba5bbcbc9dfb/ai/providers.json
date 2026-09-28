@@ -1,0 +1,4695 @@
+{
+  "version": 1,
+  "providers": {
+    "llm-deepseek": {
+      "route": "llm-deepseek",
+      "namespace": "llm-deepseek",
+      "revision": 0,
+      "secrets": [],
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "maxTokens": 256000,
+      "defaultContextWindow": 1000000,
+      "models": [
+        {
+          "id": "deepseek-v4-flash",
+          "name": "DeepSeek-V4-Flash",
+          "description": "Fast, efficient, and economical; suited to focused, routine, or parallel tasks.",
+          "contextWindow": 1000000,
+          "inputModalities": [
+            "text"
+          ]
+        },
+        {
+          "id": "deepseek-v4-pro",
+          "name": "DeepSeek-V4-Pro",
+          "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+          "contextWindow": 1000000,
+          "inputModalities": [
+            "text"
+          ]
+        },
+        {
+          "id": "deepseek-v4-flash-vision-exp",
+          "name": "DeepSeek-V4-Flash-Vision-Exp",
+          "contextWindow": 1000000,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "imagePixelBudget": 640000,
+          "imageMaxBytes": 1048576
+        }
+      ],
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestFilesBytes": 134217728,
+      "maxInlineRequestImageBytes": 20971520,
+      "maxImagesPerRequest": 600,
+      "imageOffloadByteQuantum": 67108864,
+      "inlineImageOffloadByteQuantum": 10485760,
+      "imageOffloadCountQuantum": 20,
+      "filesApiTimeoutMs": 60000,
+      "fileExpiresAfterSeconds": 604800,
+      "fileRefreshMarginSeconds": 3600,
+      "fileQuotaCleanupBatch": 100,
+      "raw": {
+        "apiKeyEnv": "DEEPSEEK_API_KEY",
+        "maxTokens": 256000,
+        "defaultContextWindow": 1000000,
+        "models": [
+          {
+            "id": "deepseek-v4-flash",
+            "name": "DeepSeek-V4-Flash",
+            "description": "Fast, efficient, and economical; suited to focused, routine, or parallel tasks.",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text"
+            ]
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek-V4-Pro",
+            "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text"
+            ]
+          },
+          {
+            "id": "deepseek-v4-flash-vision-exp",
+            "name": "DeepSeek-V4-Flash-Vision-Exp",
+            "contextWindow": 1000000,
+            "inputModalities": [
+              "text",
+              "image"
+            ],
+            "imagePixelBudget": 640000,
+            "imageMaxBytes": 1048576
+          }
+        ],
+        "streamIdleTimeoutMs": 300000,
+        "maxRequestFilesBytes": 134217728,
+        "maxInlineRequestImageBytes": 20971520,
+        "maxImagesPerRequest": 600,
+        "imageOffloadByteQuantum": 67108864,
+        "inlineImageOffloadByteQuantum": 10485760,
+        "imageOffloadCountQuantum": 20,
+        "filesApiTimeoutMs": 60000,
+        "fileExpiresAfterSeconds": 604800,
+        "fileRefreshMarginSeconds": 3600,
+        "fileQuotaCleanupBatch": 100
+      }
+    },
+    "siliconflow": {
+      "route": "siliconflow",
+      "namespace": "llm-pi-ai",
+      "revision": 0,
+      "secrets": [],
+      "apiKeyEnv": "SILICONFLOW_API_KEY",
+      "displayName": "siliconflow",
+      "api": "openai-completions",
+      "baseURL": "https://api.siliconflow.cn/v1",
+      "models": [
+        {
+          "id": "deepseek-ai/DeepSeek-V4-Flash",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "meituan-longcat/LongCat-2.0",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "zai-org/GLM-5.2",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "moonshotai/Kimi-K2.7-Code",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "deepseek-ai/DeepSeek-V4-Pro",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "nex-agi/Nex-N2-Pro",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "MiniMaxAI/MiniMax-M2.5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Pro/MiniMaxAI/MiniMax-M2.5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Tongyi-MAI/Z-Image-Turbo",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Tongyi-MAI/Z-Image",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "baidu/ERNIE-Image-Turbo",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "deepseek-ai/DeepSeek-V3.2",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Pro/deepseek-ai/DeepSeek-V3.2",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.6-35B-A3B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.6-27B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.5-397B-A17B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.5-122B-A10B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.5-35B-A3B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.5-27B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.5-9B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3.5-4B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-Embedding-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-Reranker-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "PaddlePaddle/PaddleOCR-VL-1.5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "stepfun-ai/Step-3.5-Flash",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-32B-Instruct",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-32B-Thinking",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-8B-Instruct",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-8B-Thinking",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Omni-30B-A3B-Thinking",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Omni-30B-A3B-Captioner",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "deepseek-ai/DeepSeek-OCR",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "inclusionAI/Ling-flash-2.0",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "inclusionAI/Ling-mini-2.0",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen-Image-Edit-2509",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen-Image-Edit",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen-Image",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "XingChenAGI/XingChenASR-V3.2-Ultra",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "XingChenAGI/XingChenGSR-V1.0",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "XingChenAGI/XingChenASR-Diarize-V3.0",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-ASR-1.7B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "tencent/Hunyuan-MT-7B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Wan-AI/Wan2.2-I2V-A14B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Wan-AI/Wan2.2-T2V-A14B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "zai-org/GLM-4.5V",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "zai-org/GLM-4.5-Air",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "XingChenAGI/XingChenASR-V3.2",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "tencent/Hunyuan-A13B-Instruct",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-32B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-14B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Reranker-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Embedding-8B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Reranker-4B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Embedding-4B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Reranker-0.6B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Qwen/Qwen3-Embedding-0.6B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "FunAudioLLM/CosyVoice2-0.5B",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "FunAudioLLM/SenseVoiceSmall",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "BAAI/bge-m3",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "BAAI/bge-reranker-v2-m3",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "Kwai-Kolors/Kolors",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "BAAI/bge-large-en-v1.5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "BAAI/bge-large-zh-v1.5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        }
+      ],
+      "modelOverrides": {},
+      "compat": {
+        "chatTemplateKwargs": {},
+        "chatTemplateArgs": {}
+      },
+      "defaultContextWindow": 262144,
+      "defaultMaxTokens": 32768,
+      "defaultInput": [
+        "text"
+      ],
+      "headers": {},
+      "thinkingBudgets": {},
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestImageBytes": 20971520,
+      "requestImagePixelBudget": 4194304,
+      "requestImageMaxBytes": 1048576,
+      "raw": {
+        "providers": {
+          "siliconflow": {
+            "apiKeyEnv": "SILICONFLOW_API_KEY",
+            "displayName": "siliconflow",
+            "api": "openai-completions",
+            "baseURL": "https://api.siliconflow.cn/v1",
+            "models": [
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "meituan-longcat/LongCat-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "moonshotai/Kimi-K2.7-Code",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "nex-agi/Nex-N2-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "baidu/ERNIE-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-397B-A17B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-122B-A10B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-9B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "PaddlePaddle/PaddleOCR-VL-1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "stepfun-ai/Step-3.5-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Captioner",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-OCR",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-flash-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-mini-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit-2509",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2-Ultra",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenGSR-V1.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-Diarize-V3.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-ASR-1.7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-MT-7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-I2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-T2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5V",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5-Air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-A13B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-32B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/CosyVoice2-0.5B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/SenseVoiceSmall",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-reranker-v2-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Kwai-Kolors/Kolors",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-en-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-zh-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "qwen-plan": {
+            "apiKeyEnv": "QWEN_PLAN_API_KEY",
+            "displayName": "qwen-plan",
+            "api": "openai-completions",
+            "baseURL": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+            "models": [
+              {
+                "id": "qwen3.7-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.7-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.6-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-tts-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-flash-0731",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-realtime-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4.1-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "mimo": {
+            "apiKeyEnv": "MIMO_API_KEY",
+            "displayName": "mimo",
+            "api": "openai-completions",
+            "baseURL": "https://api.xiaomimimo.com/v1",
+            "models": [
+              {
+                "id": "mimo-v2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-asr",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voiceclone",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voicedesign",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "zhipu": {
+            "apiKeyEnv": "ZHIPU_API_KEY",
+            "displayName": "GLM",
+            "api": "openai-completions",
+            "baseURL": "https://open.bigmodel.cn/api/paas/v4",
+            "models": [
+              {
+                "id": "glm-4.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.5-air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.6",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5-turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.1",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flashx",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          }
+        }
+      }
+    },
+    "qwen-plan": {
+      "route": "qwen-plan",
+      "namespace": "llm-pi-ai",
+      "revision": 0,
+      "secrets": [],
+      "apiKeyEnv": "QWEN_PLAN_API_KEY",
+      "displayName": "qwen-plan",
+      "api": "openai-completions",
+      "baseURL": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+      "models": [
+        {
+          "id": "qwen3.7-max",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "qwen3.7-plus",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "qwen3.6-flash",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-5.2",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "deepseek-v4-pro",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "wan2.7-image",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "wan2.7-image-pro",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "qwen-audio-3.0-tts-plus",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "deepseek-v4-flash-0731",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "qwen3.8-max",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "qwen-audio-3.0-realtime-plus",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "qwen3.8-flash",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "deepseek-v4.1-flash",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        }
+      ],
+      "modelOverrides": {},
+      "compat": {
+        "chatTemplateKwargs": {},
+        "chatTemplateArgs": {}
+      },
+      "defaultContextWindow": 262144,
+      "defaultMaxTokens": 32768,
+      "defaultInput": [
+        "text"
+      ],
+      "headers": {},
+      "thinkingBudgets": {},
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestImageBytes": 20971520,
+      "requestImagePixelBudget": 4194304,
+      "requestImageMaxBytes": 1048576,
+      "raw": {
+        "providers": {
+          "siliconflow": {
+            "apiKeyEnv": "SILICONFLOW_API_KEY",
+            "displayName": "siliconflow",
+            "api": "openai-completions",
+            "baseURL": "https://api.siliconflow.cn/v1",
+            "models": [
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "meituan-longcat/LongCat-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "moonshotai/Kimi-K2.7-Code",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "nex-agi/Nex-N2-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "baidu/ERNIE-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-397B-A17B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-122B-A10B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-9B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "PaddlePaddle/PaddleOCR-VL-1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "stepfun-ai/Step-3.5-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Captioner",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-OCR",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-flash-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-mini-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit-2509",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2-Ultra",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenGSR-V1.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-Diarize-V3.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-ASR-1.7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-MT-7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-I2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-T2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5V",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5-Air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-A13B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-32B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/CosyVoice2-0.5B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/SenseVoiceSmall",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-reranker-v2-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Kwai-Kolors/Kolors",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-en-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-zh-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "qwen-plan": {
+            "apiKeyEnv": "QWEN_PLAN_API_KEY",
+            "displayName": "qwen-plan",
+            "api": "openai-completions",
+            "baseURL": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+            "models": [
+              {
+                "id": "qwen3.7-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.7-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.6-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-tts-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-flash-0731",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-realtime-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4.1-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "mimo": {
+            "apiKeyEnv": "MIMO_API_KEY",
+            "displayName": "mimo",
+            "api": "openai-completions",
+            "baseURL": "https://api.xiaomimimo.com/v1",
+            "models": [
+              {
+                "id": "mimo-v2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-asr",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voiceclone",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voicedesign",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "zhipu": {
+            "apiKeyEnv": "ZHIPU_API_KEY",
+            "displayName": "GLM",
+            "api": "openai-completions",
+            "baseURL": "https://open.bigmodel.cn/api/paas/v4",
+            "models": [
+              {
+                "id": "glm-4.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.5-air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.6",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5-turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.1",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flashx",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          }
+        }
+      }
+    },
+    "mimo": {
+      "route": "mimo",
+      "namespace": "llm-pi-ai",
+      "revision": 0,
+      "secrets": [],
+      "apiKeyEnv": "MIMO_API_KEY",
+      "displayName": "mimo",
+      "api": "openai-completions",
+      "baseURL": "https://api.xiaomimimo.com/v1",
+      "models": [
+        {
+          "id": "mimo-v2.5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "mimo-v2.5-asr",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "mimo-v2.5-pro",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "mimo-v2.5-tts",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "mimo-v2.5-tts-voiceclone",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "mimo-v2.5-tts-voicedesign",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        }
+      ],
+      "modelOverrides": {},
+      "compat": {
+        "chatTemplateKwargs": {},
+        "chatTemplateArgs": {}
+      },
+      "defaultContextWindow": 262144,
+      "defaultMaxTokens": 32768,
+      "defaultInput": [
+        "text"
+      ],
+      "headers": {},
+      "thinkingBudgets": {},
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestImageBytes": 20971520,
+      "requestImagePixelBudget": 4194304,
+      "requestImageMaxBytes": 1048576,
+      "raw": {
+        "providers": {
+          "siliconflow": {
+            "apiKeyEnv": "SILICONFLOW_API_KEY",
+            "displayName": "siliconflow",
+            "api": "openai-completions",
+            "baseURL": "https://api.siliconflow.cn/v1",
+            "models": [
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "meituan-longcat/LongCat-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "moonshotai/Kimi-K2.7-Code",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "nex-agi/Nex-N2-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "baidu/ERNIE-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-397B-A17B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-122B-A10B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-9B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "PaddlePaddle/PaddleOCR-VL-1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "stepfun-ai/Step-3.5-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Captioner",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-OCR",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-flash-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-mini-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit-2509",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2-Ultra",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenGSR-V1.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-Diarize-V3.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-ASR-1.7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-MT-7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-I2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-T2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5V",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5-Air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-A13B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-32B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/CosyVoice2-0.5B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/SenseVoiceSmall",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-reranker-v2-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Kwai-Kolors/Kolors",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-en-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-zh-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "qwen-plan": {
+            "apiKeyEnv": "QWEN_PLAN_API_KEY",
+            "displayName": "qwen-plan",
+            "api": "openai-completions",
+            "baseURL": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+            "models": [
+              {
+                "id": "qwen3.7-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.7-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.6-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-tts-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-flash-0731",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-realtime-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4.1-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "mimo": {
+            "apiKeyEnv": "MIMO_API_KEY",
+            "displayName": "mimo",
+            "api": "openai-completions",
+            "baseURL": "https://api.xiaomimimo.com/v1",
+            "models": [
+              {
+                "id": "mimo-v2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-asr",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voiceclone",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voicedesign",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "zhipu": {
+            "apiKeyEnv": "ZHIPU_API_KEY",
+            "displayName": "GLM",
+            "api": "openai-completions",
+            "baseURL": "https://open.bigmodel.cn/api/paas/v4",
+            "models": [
+              {
+                "id": "glm-4.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.5-air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.6",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5-turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.1",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flashx",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          }
+        }
+      }
+    },
+    "zhipu": {
+      "route": "zhipu",
+      "namespace": "llm-pi-ai",
+      "revision": 0,
+      "secrets": [],
+      "apiKeyEnv": "ZHIPU_API_KEY",
+      "displayName": "GLM",
+      "api": "openai-completions",
+      "baseURL": "https://open.bigmodel.cn/api/paas/v4",
+      "models": [
+        {
+          "id": "glm-4.5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-4.5-air",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-4.6",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-4.7",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-5",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-5-turbo",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-5.1",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-5.2",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-5.3",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-5.3-flash",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-4.7-flash",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        },
+        {
+          "id": "glm-4.7-flashx",
+          "input": [],
+          "compat": {
+            "chatTemplateKwargs": {},
+            "chatTemplateArgs": {}
+          }
+        }
+      ],
+      "modelOverrides": {},
+      "compat": {
+        "chatTemplateKwargs": {},
+        "chatTemplateArgs": {}
+      },
+      "defaultContextWindow": 262144,
+      "defaultMaxTokens": 32768,
+      "defaultInput": [
+        "text"
+      ],
+      "headers": {},
+      "thinkingBudgets": {},
+      "streamIdleTimeoutMs": 300000,
+      "maxRequestImageBytes": 20971520,
+      "requestImagePixelBudget": 4194304,
+      "requestImageMaxBytes": 1048576,
+      "raw": {
+        "providers": {
+          "siliconflow": {
+            "apiKeyEnv": "SILICONFLOW_API_KEY",
+            "displayName": "siliconflow",
+            "api": "openai-completions",
+            "baseURL": "https://api.siliconflow.cn/v1",
+            "models": [
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "meituan-longcat/LongCat-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "moonshotai/Kimi-K2.7-Code",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V4-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "nex-agi/Nex-N2-Pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/MiniMaxAI/MiniMax-M2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Tongyi-MAI/Z-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "baidu/ERNIE-Image-Turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Pro/deepseek-ai/DeepSeek-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.6-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-397B-A17B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-122B-A10B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-35B-A3B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-27B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-9B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3.5-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "PaddlePaddle/PaddleOCR-VL-1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "stepfun-ai/Step-3.5-Flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-32B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-8B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Thinking",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Omni-30B-A3B-Captioner",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-OCR",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-flash-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "inclusionAI/Ling-mini-2.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit-2509",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image-Edit",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen-Image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2-Ultra",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenGSR-V1.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-Diarize-V3.0",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-ASR-1.7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-MT-7B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-I2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Wan-AI/Wan2.2-T2V-A14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5V",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "zai-org/GLM-4.5-Air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "XingChenAGI/XingChenASR-V3.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "tencent/Hunyuan-A13B-Instruct",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-32B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-14B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-8B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-4B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Reranker-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Qwen/Qwen3-Embedding-0.6B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/CosyVoice2-0.5B",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "FunAudioLLM/SenseVoiceSmall",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-reranker-v2-m3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "Kwai-Kolors/Kolors",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-en-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "BAAI/bge-large-zh-v1.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "qwen-plan": {
+            "apiKeyEnv": "QWEN_PLAN_API_KEY",
+            "displayName": "qwen-plan",
+            "api": "openai-completions",
+            "baseURL": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+            "models": [
+              {
+                "id": "qwen3.7-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.7-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.6-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "wan2.7-image-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-tts-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4-flash-0731",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-max",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen-audio-3.0-realtime-plus",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "qwen3.8-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "deepseek-v4.1-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "mimo": {
+            "apiKeyEnv": "MIMO_API_KEY",
+            "displayName": "mimo",
+            "api": "openai-completions",
+            "baseURL": "https://api.xiaomimimo.com/v1",
+            "models": [
+              {
+                "id": "mimo-v2.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-asr",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-pro",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voiceclone",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "mimo-v2.5-tts-voicedesign",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          },
+          "zhipu": {
+            "apiKeyEnv": "ZHIPU_API_KEY",
+            "displayName": "GLM",
+            "api": "openai-completions",
+            "baseURL": "https://open.bigmodel.cn/api/paas/v4",
+            "models": [
+              {
+                "id": "glm-4.5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.5-air",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.6",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5-turbo",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.1",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.2",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-5.3-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flash",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              },
+              {
+                "id": "glm-4.7-flashx",
+                "input": [],
+                "compat": {
+                  "chatTemplateKwargs": {},
+                  "chatTemplateArgs": {}
+                }
+              }
+            ],
+            "modelOverrides": {},
+            "compat": {
+              "chatTemplateKwargs": {},
+              "chatTemplateArgs": {}
+            },
+            "defaultContextWindow": 262144,
+            "defaultMaxTokens": 32768,
+            "defaultInput": [
+              "text"
+            ],
+            "headers": {},
+            "thinkingBudgets": {},
+            "streamIdleTimeoutMs": 300000,
+            "maxRequestImageBytes": 20971520,
+            "requestImagePixelBudget": 4194304,
+            "requestImageMaxBytes": 1048576
+          }
+        }
+      }
+    }
+  }
+}

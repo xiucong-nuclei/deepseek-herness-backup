@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Batch touch files. Paste filenames, then press Enter on empty line to finish."""
+
+import sys
+from pathlib import Path
+
+
+def main():
+    print("Paste filenames, empty line to finish:\n")
+    lines = []
+    while True:
+        try:
+            line = input()
+        except (EOFError, KeyboardInterrupt):
+            break
+        if not line.strip():
+            break
+        lines.append(line.strip())
+
+    if not lines:
+        print("No input.")
+        sys.exit(1)
+
+    for name in lines:
+        Path(name).touch(exist_ok=True)
+        print(f"  {name}")
+
+    print(f"\nDone. {len(lines)} file(s).")
+
+
+if __name__ == '__main__':
+    main()
