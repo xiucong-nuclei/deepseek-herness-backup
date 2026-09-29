@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "namespaces": {
+    "ui-onboarding": {
+      "value": {
+        "welcomeNoticeVersion": "2026-08-13.1"
+      },
+      "revision": 0,
+      "applies": [
+        "live"
+      ],
+      "secrets": []
+    }
+  },
+  "uiMigrationNotes": [
+    {
+      "plugin": "dsh-task-board",
+      "storage": "localStorage",
+      "key": "dsh.taskBoard.v1",
+      "migratable": false,
+      "reason": "任务看板数据存于浏览器 localStorage，Host 侧无访问通道，需在目标机器重新配置"
+    },
+    {
+      "plugin": "dsh-aionui-panel",
+      "storage": "localStorage",
+      "key": "aionui-panel.*",
+      "migratable": false,
+      "reason": "面板宽度/折叠状态存于浏览器 localStorage，Host 侧无访问通道，需在目标机器重新配置"
+    },
+    {
+      "plugin": "dsh-client-ui-*",
+      "storage": "localStorage",
+      "key": "*",
+      "migratable": false,
+      "reason": "浏览器端 UI 状态无法经 Host API 迁移"
+    }
+  ]
+}

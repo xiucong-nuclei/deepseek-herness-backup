@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 3,
+  "transport": "git",
+  "git": {
+    "repoUrl": "git@github.com:xiucong-nuclei/deepseek-herness-backup.git"
+  }
+}
